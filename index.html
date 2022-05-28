@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bart Chain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Example Modal</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body popup">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+        </div>
+    </div> -->
+    <!-- <div id="overlay"></div> -->
+    <div class="popup" id="popup-1">
+        <div class="overlay">
+            <div class="pop-content">
+            <div class="close-button" onclick="togglePopup()">&times;</div>
+            <h1 style="text-align: center;">Bart Chain</h1><br>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisisit amet consectetur adipisisit amet consectetur adipisisit amet consectetur adipisisit amet consectetur adipisic Ex, repellat sapiente!</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup-nav" id="popup-2">
+        <div class="overlay">
+            <div class="pop-content-nav">
+            <div class="close-button-nav" onclick="togglePopup_link()">&times;</div>
+            <h2>Cryptocurrencies we deal with:</h2>
+            <table class="spacing">
+                <tr>
+                  <th class="centre">Name</th>
+                  <th class="centre">Last Price</th>
+                  <th class="centre">24h Change</th>
+                  <th class="centre">Market Cap</th>
+                </tr>
+                <tr>
+                  <td><img src="https://wallpaperaccess.com/full/1285990.jpg" class="image">Crypto Currency Name</td>
+                  <td>$1089</td>
+                  <td>-9.12%</td>
+                  <td>$20M</td>
+                </tr>
+                <tr>
+                    <td><img src="https://wallpaperaccess.com/full/1285990.jpg" class="image">Crypto Currency Name</td>
+                    <td>$1089</td>
+                    <td>-9.12%</td>
+                    <td>$20M</td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://wallpaperaccess.com/full/1285990.jpg" class="image">Crypto Currency Name</td>
+                    <td>$1089</td>
+                    <td>-9.12%</td>
+                    <td>$20M</td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://wallpaperaccess.com/full/1285990.jpg" class="image">Crypto Currency Name</td>
+                    <td>$1089</td>
+                    <td>-9.12%</td>
+                    <td>$20M</td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://wallpaperaccess.com/full/1285990.jpg" class="image">Crypto Currency Name</td>
+                    <td>$1089</td>
+                    <td>-9.12%</td>
+                    <td>$20M</td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://wallpaperaccess.com/full/1285990.jpg" class="image">Crypto Currency Name</td>
+                    <td>$1089</td>
+                    <td>-9.12%</td>
+                    <td>$20M</td>
+                  </tr>
+                
+              </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-nav" id="popup-3">
+        <div class="overlay">
+            <div class="pop-content-nav">
+            <div class="close-button-nav" onclick="togglePopup_link2()">&times;</div>
+            <div class="solana-float">
+                <div><img src="./images/logo.png" alt="Bartchain Logo"></div>
+                <div class="solana-desc">
+                    <p>Solana- Faster than this network</p>
+                <p>Binance: Three layer</p>
+                <p>Hybrid systems</p>
+                <p>Polygon: No gas fee</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation bar -->
+    <div class="background" style="height: 72px;">
+        <div class="container background" style="margin-bottom: 0px;">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom background" style="margin-bottom: 0px; padding-bottom: 0%;">
+            <img src="./images/logo.png" class="logo">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none background" style="color: white;">
+                <h1 style="color: white; font-weight: 400;margin-left: 0px;">Bart Chain</h1>
+            </a>
+        
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 background" style="color: white;">
+                    <button class="link-button" onclick="togglePopup_link()">Market</button></a></li>
+                <li><a href="#" class="nav-link px-2 background" style="color: white;">
+                    <button class="link-button" onclick="togglePopup_link2()">Bart Chain</button>
+                </a></li>
+                <li><a href="#" class="nav-link px-2 background" style="color: white;">
+                    <button class="link-button" onclick="togglePopup_link()">Derivatives</button>
+                </a></li>
+            </ul>
+        
+            <div class="col-md-3 text-end">
+               <button type="button" class="learn-more" onclick="togglePopup()">Get Started</button>
+               
+            </div>
+            </header>
+        </div>
+    </div>
+    
+    <main>
+        <div class="intro body-background">
+            
+            <div class="intro-para"><h1 class="">India’s fastest hybrid network with zero gas fees.</h1><br><br>
+                <button class="learn-more1" onclick="togglePopup()">Get Started</button>
+
+            </div>
+            <br>    
+            <div class="first-svg">
+                <svg width="236" height="205" viewBox="0 0 236 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M224.903 21.1827C237.283 37.5017 236.809 61.3968 225.633 87.055C214.472 112.679 192.715 139.837 162.975 162.401C133.234 184.964 101.219 198.601 73.5356 202.447C45.8153 206.299 22.6758 200.318 10.2951 184C-2.08564 167.681 -1.61168 143.785 9.56421 118.127C20.7255 92.5028 42.4825 65.3451 72.2231 42.7817C101.964 20.2183 133.978 6.58102 161.662 2.73484C189.382 -1.11639 212.522 4.86382 224.903 21.1827Z" stroke="#FAA41A" stroke-width="2"/>
+                </svg>                    
+            </div>
+            <div class="second-svg">
+                <svg width="236" height="205" viewBox="0 0 236 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M224.903 21.1827C237.283 37.5017 236.809 61.3968 225.633 87.055C214.472 112.679 192.715 139.837 162.975 162.401C133.234 184.964 101.219 198.601 73.5356 202.447C45.8153 206.299 22.6758 200.318 10.2951 184C-2.08564 167.681 -1.61168 143.785 9.56421 118.127C20.7255 92.5028 42.4825 65.3451 72.2231 42.7817C101.964 20.2183 133.978 6.58102 161.662 2.73484C189.382 -1.11639 212.522 4.86382 224.903 21.1827Z" stroke="#FAA41A" stroke-width="2"/>
+                </svg>                    
+            </div>
+            <div class="third-svg">
+                <svg width="236" height="205" viewBox="0 0 236 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M224.903 21.1827C237.283 37.5017 236.809 61.3968 225.633 87.055C214.472 112.679 192.715 139.837 162.975 162.401C133.234 184.964 101.219 198.601 73.5356 202.447C45.8153 206.299 22.6758 200.318 10.2951 184C-2.08564 167.681 -1.61168 143.785 9.56421 118.127C20.7255 92.5028 42.4825 65.3451 72.2231 42.7817C101.964 20.2183 133.978 6.58102 161.662 2.73484C189.382 -1.11639 212.522 4.86382 224.903 21.1827Z" stroke="#FAA41A" stroke-width="2"/>
+                </svg>                    
+            </div>            
+        </div>
+        <div class="info">
+            <div class="info-element">
+                <h3><strong>$20k+</strong></h3>
+                <p>24 hour trading value with Bartchain</p>
+            </div>
+            <div class="info-element">
+                <h3><strong>20+</strong></h3>
+                <p>Cryptocurrencies 
+                    listed</p>
+            </div>
+            <div class="info-element">
+                <h3><strong>40k+</strong></h3>
+                <p>Registered users</p>
+            </div>
+            <div class="info-element">
+                <h3><strong><0.10%</strong></h3>
+                <p>Lowest transaction fees</p>
+            </div>
+        </div>
+        <div class="topic body-background">
+            <h1>WHY BARTCHAIN?</h1>
+            <hr class="ruler">
+        </div>
+        <div class="carousel">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides">
+                  <div class="floating-des">
+                      <h3>HOW FASTEST NETWORK?</h3>
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                  </div>
+                </div>
+              
+                <div class="mySlides">
+                    <div class="floating-des">
+                        <h3>THREE LAYER NETWORK?</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><br>
+                        <button class="learn-more" onclick="togglePopup()">Learn More</button>
+                    </div>
+                </div>
+              
+                <div class="mySlides">
+                    <div class="floating-des">
+                        <h3>NO GAS FEES?</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><br>
+                        <button class="learn-more" onclick="togglePopup()">Learn More</button>
+                    </div>
+                </div>
+              
+               
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        </div>
+        <div class="parent-video">
+            <div class="bartchain-video">
+                <div class="content">
+                    <div class="content-des">
+                        <h3>Some points for bartchain, we can add a video on the right side.</h3><br>
+                        <button class="learn-more1" onclick="togglePopup()">Learn More</button>
+                
+                    </div>
+                    <div class="content-des">
+                        <iframe width="80%" height="auto"
+                        src="https://www.youtube.com/watch?v=M576WGiDBdQ">
+                        </iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topic body-background">
+            <h1>Bartchain - One Single Liner</h1>
+            <hr class="ruler">
+            <p>About Bartchain - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis leo donec purus amet, leo ac non cursus semper. In urna amet, vulputate nunc arcu, ut. </p>
+        </div>
+        <div class="parent-video">
+            <div class="bartchain-video">
+                <div class="content">
+                    <div class="content-des">
+                        <h3>Some points for bartchain, we can add a video on the right side.</h3><br>
+                        <button class="learn-more1" onclick="togglePopup()">Learn More</button>
+                
+                    </div>
+                    <div class="content-des">
+                        <iframe width="80%" height="auto"
+                        src="https://www.youtube.com/watch?v=M576WGiDBdQ">
+                        </iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topic body-background">
+            <h1>Bartchain - One Single Liner</h1>
+            <hr class="ruler">
+        </div>
+        <div class="profile">
+            <div class="profile-images">
+                <div class="profile-content">
+                    <img src="images/grey_background.jpg" class="profile-img">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, c=fugit dolores,estias facere?</p>
+                 </div>
+                 <div class="profile-content">
+                    <img src="images/grey_background.jpg" class="profile-img">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, c=fugit dolores,estias facere?</p>
+                 </div>
+                 <div class="profile-content">
+                    <img src="images/grey_background.jpg" class="profile-img">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, c=fugit dolores,estias facere?</p>
+                 </div>
+                 <div class="profile-content">
+                     <img src="images/grey_background.jpg" class="profile-img">
+                     <h3>Lorem Ipsum</h3>
+                     <p>Lorem ipsum dolor sit amet, c=fugit dolores,estias facere?</p>
+                  </div>
+            </div>
+        </div>
+        <div class="topic body-background">
+            <h1>Bartchain - One Single Liner</h1>
+            <hr class="ruler">
+        </div>
+        <div class="bartchain-flex">
+            <div class="child1"><p>Few lines for bartchain over here, exaplining something.</p></div>
+            <div class="child2"><p>Few lines for bartchain over here, exaplining something.</p></div>
+            <div class="child3"><p>Few lines for bartchain over here, exaplining something.</p></div>
+            <div class="child4"><p>Few lines for bartchain over here, exaplining something.</p></div>
+            <div class="child5"><p>Few lines for bartchain over here, exaplining something.</p></div>
+
+        </div>
+        <br><br>
+    </main>
+    <footer class="footer-grid">
+        <div class="footer-nav">
+            <img src="./images/logo.png" class="logo footer-logo">
+            <p class="footer-english">English</p>
+        </div>
+        <hr style="color: white;">
+        <div class="footer-links">
+            <div class="links">
+                <h3>Twitter</h3>
+                <p>English</p>
+                <p>English</p>
+                <p>English</p>
+            </div>
+            <div class="links">
+                <h3>Twitter</h3>
+                <p>English</p>
+                <p>English</p>
+                <p>English</p>
+            </div>
+            <div class="links">
+                <h3>Twitter</h3>
+                <p>English</p>
+                <p>English</p>
+                <p>English</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active"}
+  function togglePopup(){
+      document.getElementById("popup-1").classList.toggle("active-p");
+  }
+  function togglePopup_link(){
+      document.getElementById("popup-2").classList.toggle("active-p");
+  }
+  function togglePopup_link2(){
+      document.getElementById("popup-3").classList.toggle("active-p");
+  }
+    </script>
+</body>
+</html>
