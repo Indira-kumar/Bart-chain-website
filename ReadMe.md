@@ -50,7 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [Licensed](./LICENSE) licensed.
+This project is [Licensed](./LICENSE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
